@@ -1,3 +1,6 @@
+[![CI](https://github.com/shreyapatil9480/dotnet-inventory-api/actions/workflows/ci.yml/badge.svg)](https://github.com/shreyapatil9480/dotnet-inventory-api/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/shreyapatil9480/dotnet-inventory-api/branch/main/graph/badge.svg)](https://codecov.io/gh/shreyapatil9480/dotnet-inventory-api)
+
 # dotnet-inventory-api
 
 A **Clean Architecture Inventory Management API** built with **ASP.NET Core (.NET 8)**, demonstrating **SOLID principles**, **design patterns**, **CQRS with MediatR**, and the **Repository pattern**. This project is explicitly designed to showcase the architectural knowledge tested in Software Engineer II interviews.
@@ -31,7 +34,7 @@ A **Clean Architecture Inventory Management API** built with **ASP.NET Core (.NE
 ├─────────────────────────────────────────────────────────────┤
 │                    Application Layer                        │
 │   (MediatR Handlers, FluentValidation, AutoMapper, DTOs)   │
-│   Zero framework dependencies — pure C# business logic      │
+│   MediatR, FluentValidation, and AutoMapper in the Application layer      │
 │   Depends on: Domain (interfaces only)                      │
 ├─────────────────────────────────────────────────────────────┤
 │                   Infrastructure Layer                      │
@@ -40,7 +43,7 @@ A **Clean Architecture Inventory Management API** built with **ASP.NET Core (.NE
 │        Implements: Domain interfaces                        │
 ├─────────────────────────────────────────────────────────────┤
 │                      Domain Layer                           │
-│    (Entity classes, Repository interfaces, Domain events,  │
+│    (Entity classes, Repository interfaces, Domain exceptions,  │
 │     Domain exceptions)                                     │
 │     Zero dependencies on any external framework            │
 └─────────────────────────────────────────────────────────────┘
