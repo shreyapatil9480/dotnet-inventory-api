@@ -218,7 +218,7 @@ dotnet ef database update
 dotnet run
 ```
 
-Swagger UI at `https://localhost:5001/swagger`
+Swagger UI at `http://localhost:5074/swagger`
 
 ```bash
 # Run tests
