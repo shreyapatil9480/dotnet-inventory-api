@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/InventoryApi.API/InventoryApi.API.csproj" />
+    <Project Path="src/InventoryApi.Application/InventoryApi.Application.csproj" />
+    <Project Path="src/InventoryApi.Domain/InventoryApi.Domain.csproj" />
+    <Project Path="src/InventoryApi.Infrastructure/InventoryApi.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/InventoryApi.IntegrationTests/InventoryApi.IntegrationTests.csproj" />
+    <Project Path="tests/InventoryApi.UnitTests/InventoryApi.UnitTests.csproj" />
+  </Folder>
+</Solution>
