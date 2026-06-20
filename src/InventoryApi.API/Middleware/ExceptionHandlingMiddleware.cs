@@ -38,8 +38,8 @@ public class ExceptionHandlingMiddleware
             ValidationException validationEx => (
                 HttpStatusCode.BadRequest,
                 string.Join("; ", validationEx.Errors.Select(e => e.ErrorMessage))),
-            DomainException domainEx => (HttpStatusCode.BadRequest, domainEx.Message),
             InsufficientStockException stockEx => (HttpStatusCode.Conflict, stockEx.Message),
+            DomainException domainEx => (HttpStatusCode.BadRequest, domainEx.Message),
             _ => (HttpStatusCode.InternalServerError, "An unexpected error occurred.")
         };
 
