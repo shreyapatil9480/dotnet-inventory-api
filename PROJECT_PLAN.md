@@ -389,12 +389,3 @@ After completing the project, add this table to the README with links to specifi
 | Phase 6 — GitHub Actions | 1 day |
 | README polish + SOLID table | 1 day |
 | **Total** | **~10 days** |
-
----
-
-## Resume Bullets (add after completing)
-
-- Architected a .NET 8 Inventory Management API using Clean Architecture, implementing CQRS with MediatR, the Repository pattern, and FluentValidation across four decoupled layers (Domain, Application, Infrastructure, API).
-- Applied all five SOLID principles throughout the codebase — explicitly documented in the project README with file-level code references for each principle.
-- Implemented Factory and Strategy design patterns for stock movement creation and extensible pricing rules, enabling new behavior without modifying existing code (Open/Closed Principle).
-- Wrote xUnit unit tests that mock repository interfaces to test Application layer handlers in complete isolation from the database, achieving 90%+ coverage on business logic.

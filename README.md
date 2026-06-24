@@ -104,6 +104,16 @@ public class CreateProductHandler : IRequestHandler<CreateProductCommand, int>
 }
 ```
 
+### SOLID at a Glance
+
+| Principle | Code Location | Description |
+|---|---|---|
+| **S** — Single Responsibility | [`Application/Handlers/`](src/InventoryApi.Application/) | Each handler class has one job |
+| **O** — Open/Closed | [`Application/Pricing/IPricingStrategy.cs`](src/InventoryApi.Application/Pricing/IPricingStrategy.cs) | New pricing = new class, no existing code changed |
+| **L** — Liskov Substitution | [`Infrastructure/Repositories/`](src/InventoryApi.Infrastructure/Repositories/) | Any repository implementation substitutes the interface safely |
+| **I** — Interface Segregation | [`Domain/Interfaces/`](src/InventoryApi.Domain/Interfaces/) | Separate interfaces per entity, no fat interfaces |
+| **D** — Dependency Inversion | [`API/Controllers/`](src/InventoryApi.API/Controllers/) | All controllers depend on abstractions |
+
 ---
 
 ## Design Patterns
